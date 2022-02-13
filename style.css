@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
+
+input {
+    width: 350px;
+    border-radius: 5px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.pin-btn {
+    background-color: rgba(0, 0, 255, 0.733);
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    background-color: rgba(0, 0, 255, 0.733);
+
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: colorchanging;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+/* .set-pin-box,
+.items {
+    height: 400px;
+    background-color: rgb(189, 169, 169);
+
+} */
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@keyframes colorchanging {
+    0% {
+        background-color: rgb(8, 245, 245);
+        transform: translate(0.5);
+
+    }
+
+    25% {
+        background-color: rgba(8, 245, 245, 0.596);
+
+    }
+
+    50% {
+        background-color: rgba(8, 245, 245, 0.329);
+    }
+
+    75% {
+        background-color: rgba(0, 0, 255, 0.61);
+    }
+
+    100% {
+        background-color: blue;
+        transform: translate(0.75);
+    }
+}
